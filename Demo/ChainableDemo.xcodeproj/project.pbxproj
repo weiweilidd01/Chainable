@@ -15,23 +15,6 @@
 		CE12E53021E7109F00A22061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE12E52E21E7109F00A22061 /* LaunchScreen.storyboard */; };
 		CE12E53B21E7109F00A22061 /* ChainableDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E53A21E7109F00A22061 /* ChainableDemoTests.swift */; };
 		CE12E54621E7109F00A22061 /* ChainableDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E54521E7109F00A22061 /* ChainableDemoUITests.swift */; };
-		CE12E56521E710EF00A22061 /* UIButton+EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55421E710EF00A22061 /* UIButton+EdgeInsets.swift */; };
-		CE12E56621E710EF00A22061 /* UITextField+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55521E710EF00A22061 /* UITextField+Shake.swift */; };
-		CE12E56721E710EF00A22061 /* UITextView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55621E710EF00A22061 /* UITextView+Chainable.swift */; };
-		CE12E56821E710EF00A22061 /* UITextView+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55721E710EF00A22061 /* UITextView+Placeholder.swift */; };
-		CE12E56921E710EF00A22061 /* UITextField+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55821E710EF00A22061 /* UITextField+Chainable.swift */; };
-		CE12E56A21E710EF00A22061 /* UITableView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55921E710EF00A22061 /* UITableView+Chainable.swift */; };
-		CE12E56B21E710EF00A22061 /* UIImageView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55A21E710EF00A22061 /* UIImageView+Chainable.swift */; };
-		CE12E56C21E710EF00A22061 /* UILabel+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55B21E710EF00A22061 /* UILabel+Chainable.swift */; };
-		CE12E56D21E710EF00A22061 /* UIButton+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55C21E710EF00A22061 /* UIButton+Chainable.swift */; };
-		CE12E56E21E710EF00A22061 /* UIKit+Closurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55D21E710EF00A22061 /* UIKit+Closurable.swift */; };
-		CE12E56F21E710EF00A22061 /* UITextField+LengthLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55E21E710EF00A22061 /* UITextField+LengthLimit.swift */; };
-		CE12E57021E710EF00A22061 /* UITextField+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E55F21E710EF00A22061 /* UITextField+Blocks.swift */; };
-		CE12E57121E710EF00A22061 /* UIView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E56021E710EF00A22061 /* UIView+Chainable.swift */; };
-		CE12E57221E710EF00A22061 /* UITextView+LengthLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E56121E710EF00A22061 /* UITextView+LengthLimit.swift */; };
-		CE12E57321E710EF00A22061 /* UIKit+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E56221E710EF00A22061 /* UIKit+Chainable.swift */; };
-		CE12E57421E710EF00A22061 /* UITableView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E56321E710EF00A22061 /* UITableView+Blocks.swift */; };
-		CE12E57521E710EF00A22061 /* UITextView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E56421E710EF00A22061 /* UITextView+Blocks.swift */; };
 		CE12E57921E7120800A22061 /* TextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E57721E7120800A22061 /* TextFieldVC.swift */; };
 		CE12E57A21E7120800A22061 /* TextFieldVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E57821E7120800A22061 /* TextFieldVC.xib */; };
 		CE12E57D21E716E800A22061 /* UIKitChainableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E57B21E716E800A22061 /* UIKitChainableVC.swift */; };
@@ -40,25 +23,12 @@
 		CE12E58221E717A900A22061 /* TableViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E58021E717A900A22061 /* TableViewVC.xib */; };
 		CE12E58521E71A4300A22061 /* TextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E58321E71A4300A22061 /* TextViewVC.swift */; };
 		CE12E58621E71A4300A22061 /* TextViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E58421E71A4300A22061 /* TextViewVC.xib */; };
-		CE12E58821E71F7400A22061 /* UIScrollView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E58721E71F7400A22061 /* UIScrollView+Chainable.swift */; };
-		CE12E58A21E7232F00A22061 /* UIScrollView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E58921E7232F00A22061 /* UIScrollView+Blocks.swift */; };
 		CE12E58D21E7317C00A22061 /* ScrollViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E58B21E7317C00A22061 /* ScrollViewVC.swift */; };
 		CE12E58E21E7317C00A22061 /* ScrollViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E58C21E7317C00A22061 /* ScrollViewVC.xib */; };
-		CE12E59121E73B2600A22061 /* UICollectionView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E59021E73B2600A22061 /* UICollectionView+Chainable.swift */; };
-		CE12E59321E73E7B00A22061 /* UICollectionView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E59221E73E7B00A22061 /* UICollectionView+Blocks.swift */; };
 		CE12E59621E8283E00A22061 /* CollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E59421E8283E00A22061 /* CollectionViewVC.swift */; };
 		CE12E59721E8283E00A22061 /* CollectionViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E59521E8283E00A22061 /* CollectionViewVC.xib */; };
-		CE12E59921E8510000A22061 /* UISearchBar+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E59821E8510000A22061 /* UISearchBar+Chainable.swift */; };
-		CE12E59B21E8694800A22061 /* UISearchBar+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E59A21E8694800A22061 /* UISearchBar+Blocks.swift */; };
 		CE12E59E21E8732800A22061 /* SearchBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E59C21E8732800A22061 /* SearchBarVC.swift */; };
 		CE12E59F21E8732800A22061 /* SearchBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E59D21E8732800A22061 /* SearchBarVC.xib */; };
-		CE12E5A121E8763500A22061 /* UISlider+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E5A021E8763500A22061 /* UISlider+Chainable.swift */; };
-		CE12E5A421E878B800A22061 /* UIControl+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E5A321E878B800A22061 /* UIControl+Chainable.swift */; };
-		CE12E5AA21E87BB000A22061 /* UISwitch+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E5A921E87BB000A22061 /* UISwitch+Chainable.swift */; };
-		CE12E5AC21E87DEE00A22061 /* UIProgressView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E5AB21E87DEE00A22061 /* UIProgressView+Chainable.swift */; };
-		CE12E5AE21E87FF300A22061 /* UISegmentedControl+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E5AD21E87FF300A22061 /* UISegmentedControl+Chainable.swift */; };
-		CE12E5B021E8856400A22061 /* NSObject+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E5AF21E8856400A22061 /* NSObject+Chainable.swift */; };
-		CE12E5B221E885EA00A22061 /* Foundation+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E5B121E885EA00A22061 /* Foundation+Chainable.swift */; };
 		CE12E5B521E88F3200A22061 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E5B321E88F3200A22061 /* NotificationVC.swift */; };
 		CE12E5B621E88F3200A22061 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E5B421E88F3200A22061 /* NotificationVC.xib */; };
 /* End PBXBuildFile section */
@@ -96,23 +66,6 @@
 		CE12E54121E7109F00A22061 /* ChainableDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainableDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE12E54521E7109F00A22061 /* ChainableDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainableDemoUITests.swift; sourceTree = "<group>"; };
 		CE12E54721E7109F00A22061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE12E55421E710EF00A22061 /* UIButton+EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+EdgeInsets.swift"; sourceTree = "<group>"; };
-		CE12E55521E710EF00A22061 /* UITextField+Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Shake.swift"; sourceTree = "<group>"; };
-		CE12E55621E710EF00A22061 /* UITextView+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E55721E710EF00A22061 /* UITextView+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Placeholder.swift"; sourceTree = "<group>"; };
-		CE12E55821E710EF00A22061 /* UITextField+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E55921E710EF00A22061 /* UITableView+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E55A21E710EF00A22061 /* UIImageView+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E55B21E710EF00A22061 /* UILabel+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E55C21E710EF00A22061 /* UIButton+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E55D21E710EF00A22061 /* UIKit+Closurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Closurable.swift"; sourceTree = "<group>"; };
-		CE12E55E21E710EF00A22061 /* UITextField+LengthLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+LengthLimit.swift"; sourceTree = "<group>"; };
-		CE12E55F21E710EF00A22061 /* UITextField+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Blocks.swift"; sourceTree = "<group>"; };
-		CE12E56021E710EF00A22061 /* UIView+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E56121E710EF00A22061 /* UITextView+LengthLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+LengthLimit.swift"; sourceTree = "<group>"; };
-		CE12E56221E710EF00A22061 /* UIKit+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E56321E710EF00A22061 /* UITableView+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Blocks.swift"; sourceTree = "<group>"; };
-		CE12E56421E710EF00A22061 /* UITextView+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Blocks.swift"; sourceTree = "<group>"; };
 		CE12E57721E7120800A22061 /* TextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldVC.swift; sourceTree = "<group>"; };
 		CE12E57821E7120800A22061 /* TextFieldVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldVC.xib; sourceTree = "<group>"; };
 		CE12E57B21E716E800A22061 /* UIKitChainableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitChainableVC.swift; sourceTree = "<group>"; };
@@ -121,25 +74,12 @@
 		CE12E58021E717A900A22061 /* TableViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewVC.xib; sourceTree = "<group>"; };
 		CE12E58321E71A4300A22061 /* TextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewVC.swift; sourceTree = "<group>"; };
 		CE12E58421E71A4300A22061 /* TextViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewVC.xib; sourceTree = "<group>"; };
-		CE12E58721E71F7400A22061 /* UIScrollView+Chainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E58921E7232F00A22061 /* UIScrollView+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Blocks.swift"; sourceTree = "<group>"; };
 		CE12E58B21E7317C00A22061 /* ScrollViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewVC.swift; sourceTree = "<group>"; };
 		CE12E58C21E7317C00A22061 /* ScrollViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewVC.xib; sourceTree = "<group>"; };
-		CE12E59021E73B2600A22061 /* UICollectionView+Chainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E59221E73E7B00A22061 /* UICollectionView+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Blocks.swift"; sourceTree = "<group>"; };
 		CE12E59421E8283E00A22061 /* CollectionViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewVC.swift; sourceTree = "<group>"; };
 		CE12E59521E8283E00A22061 /* CollectionViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewVC.xib; sourceTree = "<group>"; };
-		CE12E59821E8510000A22061 /* UISearchBar+Chainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E59A21E8694800A22061 /* UISearchBar+Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Blocks.swift"; sourceTree = "<group>"; };
 		CE12E59C21E8732800A22061 /* SearchBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarVC.swift; sourceTree = "<group>"; };
 		CE12E59D21E8732800A22061 /* SearchBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarVC.xib; sourceTree = "<group>"; };
-		CE12E5A021E8763500A22061 /* UISlider+Chainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISlider+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E5A321E878B800A22061 /* UIControl+Chainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E5A921E87BB000A22061 /* UISwitch+Chainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E5AB21E87DEE00A22061 /* UIProgressView+Chainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E5AD21E87FF300A22061 /* UISegmentedControl+Chainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E5AF21E8856400A22061 /* NSObject+Chainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Chainable.swift"; sourceTree = "<group>"; };
-		CE12E5B121E885EA00A22061 /* Foundation+Chainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Chainable.swift"; sourceTree = "<group>"; };
 		CE12E5B321E88F3200A22061 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		CE12E5B421E88F3200A22061 /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
 		E11E81A5EA708901F407929E /* Pods-ChainableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainableDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChainableDemo/Pods-ChainableDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				CE12E57621E711EE00A22061 /* DemoVCs */,
-				CE12E55321E710EF00A22061 /* Chainable */,
 				CE12E52521E7109E00A22061 /* AppDelegate.swift */,
 				CE12E52721E7109E00A22061 /* ViewController.swift */,
 				CE12E52921E7109E00A22061 /* Main.storyboard */,
@@ -232,43 +171,6 @@
 				CE12E54721E7109F00A22061 /* Info.plist */,
 			);
 			path = ChainableDemoUITests;
-			sourceTree = "<group>";
-		};
-		CE12E55321E710EF00A22061 /* Chainable */ = {
-			isa = PBXGroup;
-			children = (
-				CE12E5B121E885EA00A22061 /* Foundation+Chainable.swift */,
-				CE12E5AF21E8856400A22061 /* NSObject+Chainable.swift */,
-				CE12E56221E710EF00A22061 /* UIKit+Chainable.swift */,
-				CE12E5A321E878B800A22061 /* UIControl+Chainable.swift */,
-				CE12E5A021E8763500A22061 /* UISlider+Chainable.swift */,
-				CE12E5AD21E87FF300A22061 /* UISegmentedControl+Chainable.swift */,
-				CE12E5AB21E87DEE00A22061 /* UIProgressView+Chainable.swift */,
-				CE12E5A921E87BB000A22061 /* UISwitch+Chainable.swift */,
-				CE12E59821E8510000A22061 /* UISearchBar+Chainable.swift */,
-				CE12E59021E73B2600A22061 /* UICollectionView+Chainable.swift */,
-				CE12E55821E710EF00A22061 /* UITextField+Chainable.swift */,
-				CE12E55921E710EF00A22061 /* UITableView+Chainable.swift */,
-				CE12E55A21E710EF00A22061 /* UIImageView+Chainable.swift */,
-				CE12E55621E710EF00A22061 /* UITextView+Chainable.swift */,
-				CE12E56021E710EF00A22061 /* UIView+Chainable.swift */,
-				CE12E58721E71F7400A22061 /* UIScrollView+Chainable.swift */,
-				CE12E55C21E710EF00A22061 /* UIButton+Chainable.swift */,
-				CE12E55B21E710EF00A22061 /* UILabel+Chainable.swift */,
-				CE12E55421E710EF00A22061 /* UIButton+EdgeInsets.swift */,
-				CE12E55521E710EF00A22061 /* UITextField+Shake.swift */,
-				CE12E55721E710EF00A22061 /* UITextView+Placeholder.swift */,
-				CE12E55D21E710EF00A22061 /* UIKit+Closurable.swift */,
-				CE12E55E21E710EF00A22061 /* UITextField+LengthLimit.swift */,
-				CE12E55F21E710EF00A22061 /* UITextField+Blocks.swift */,
-				CE12E56121E710EF00A22061 /* UITextView+LengthLimit.swift */,
-				CE12E56321E710EF00A22061 /* UITableView+Blocks.swift */,
-				CE12E56421E710EF00A22061 /* UITextView+Blocks.swift */,
-				CE12E58921E7232F00A22061 /* UIScrollView+Blocks.swift */,
-				CE12E59221E73E7B00A22061 /* UICollectionView+Blocks.swift */,
-				CE12E59A21E8694800A22061 /* UISearchBar+Blocks.swift */,
-			);
-			path = Chainable;
 			sourceTree = "<group>";
 		};
 		CE12E57621E711EE00A22061 /* DemoVCs */ = {
@@ -449,6 +351,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ChainableDemo/Pods-ChainableDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DDKit/DDKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -457,6 +360,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DDKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -495,46 +399,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE12E57321E710EF00A22061 /* UIKit+Chainable.swift in Sources */,
-				CE12E5A421E878B800A22061 /* UIControl+Chainable.swift in Sources */,
-				CE12E58821E71F7400A22061 /* UIScrollView+Chainable.swift in Sources */,
-				CE12E56721E710EF00A22061 /* UITextView+Chainable.swift in Sources */,
-				CE12E59921E8510000A22061 /* UISearchBar+Chainable.swift in Sources */,
 				CE12E57D21E716E800A22061 /* UIKitChainableVC.swift in Sources */,
 				CE12E57921E7120800A22061 /* TextFieldVC.swift in Sources */,
-				CE12E5B021E8856400A22061 /* NSObject+Chainable.swift in Sources */,
-				CE12E59B21E8694800A22061 /* UISearchBar+Blocks.swift in Sources */,
-				CE12E57221E710EF00A22061 /* UITextView+LengthLimit.swift in Sources */,
-				CE12E56A21E710EF00A22061 /* UITableView+Chainable.swift in Sources */,
-				CE12E56C21E710EF00A22061 /* UILabel+Chainable.swift in Sources */,
-				CE12E56D21E710EF00A22061 /* UIButton+Chainable.swift in Sources */,
-				CE12E56621E710EF00A22061 /* UITextField+Shake.swift in Sources */,
-				CE12E57521E710EF00A22061 /* UITextView+Blocks.swift in Sources */,
-				CE12E5AE21E87FF300A22061 /* UISegmentedControl+Chainable.swift in Sources */,
-				CE12E57021E710EF00A22061 /* UITextField+Blocks.swift in Sources */,
 				CE12E58521E71A4300A22061 /* TextViewVC.swift in Sources */,
-				CE12E56B21E710EF00A22061 /* UIImageView+Chainable.swift in Sources */,
-				CE12E5AC21E87DEE00A22061 /* UIProgressView+Chainable.swift in Sources */,
 				CE12E59E21E8732800A22061 /* SearchBarVC.swift in Sources */,
-				CE12E59321E73E7B00A22061 /* UICollectionView+Blocks.swift in Sources */,
 				CE12E59621E8283E00A22061 /* CollectionViewVC.swift in Sources */,
-				CE12E56F21E710EF00A22061 /* UITextField+LengthLimit.swift in Sources */,
-				CE12E5B221E885EA00A22061 /* Foundation+Chainable.swift in Sources */,
-				CE12E58A21E7232F00A22061 /* UIScrollView+Blocks.swift in Sources */,
 				CE12E52821E7109E00A22061 /* ViewController.swift in Sources */,
-				CE12E56521E710EF00A22061 /* UIButton+EdgeInsets.swift in Sources */,
-				CE12E56921E710EF00A22061 /* UITextField+Chainable.swift in Sources */,
-				CE12E5A121E8763500A22061 /* UISlider+Chainable.swift in Sources */,
-				CE12E57121E710EF00A22061 /* UIView+Chainable.swift in Sources */,
 				CE12E5B521E88F3200A22061 /* NotificationVC.swift in Sources */,
 				CE12E58D21E7317C00A22061 /* ScrollViewVC.swift in Sources */,
 				CE12E52621E7109E00A22061 /* AppDelegate.swift in Sources */,
 				CE12E58121E717A900A22061 /* TableViewVC.swift in Sources */,
-				CE12E57421E710EF00A22061 /* UITableView+Blocks.swift in Sources */,
-				CE12E5AA21E87BB000A22061 /* UISwitch+Chainable.swift in Sources */,
-				CE12E59121E73B2600A22061 /* UICollectionView+Chainable.swift in Sources */,
-				CE12E56E21E710EF00A22061 /* UIKit+Closurable.swift in Sources */,
-				CE12E56821E710EF00A22061 /* UITextView+Placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

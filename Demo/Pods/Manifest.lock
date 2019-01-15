@@ -1,4 +1,7 @@
 PODS:
+  - DDKit/Chainable (0.7.5):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
@@ -6,20 +9,22 @@ PODS:
     - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
-  - RxCocoa (~> 4.0)
-  - RxSwift (~> 4.0)
+  - DDKit/Chainable
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - RxAtomic
     - RxCocoa
     - RxSwift
+  https://github.com/hk01-digital/hk01-ios-uikit-spec.git:
+    - DDKit
 
 SPEC CHECKSUMS:
+  DDKit: 4303528dc229304f61d470b5f7dba8c3174ebf7c
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 768831076f029e80f33cf12c7191bc9846171a5e
+PODFILE CHECKSUM: 8e68884af5dba61578c1150155b8c7fb80374e7b
 
 COCOAPODS: 1.5.3
