@@ -32,7 +32,6 @@
 		CE12E5B521E88F3200A22061 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E5B321E88F3200A22061 /* NotificationVC.swift */; };
 		CE12E5B621E88F3200A22061 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E5B421E88F3200A22061 /* NotificationVC.xib */; };
 		CE174F8E21EDEC50009E5A9A /* UISegmentedControl+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE174F7021EDEC50009E5A9A /* UISegmentedControl+Chainable.swift */; };
-		CE174F8F21EDEC50009E5A9A /* Foundation+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE174F7121EDEC50009E5A9A /* Foundation+Chainable.swift */; };
 		CE174F9021EDEC50009E5A9A /* UIScrollView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE174F7221EDEC50009E5A9A /* UIScrollView+Blocks.swift */; };
 		CE174F9121EDEC50009E5A9A /* UIButton+EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE174F7321EDEC50009E5A9A /* UIButton+EdgeInsets.swift */; };
 		CE174F9221EDEC50009E5A9A /* UITextField+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE174F7421EDEC50009E5A9A /* UITextField+Shake.swift */; };
@@ -113,7 +112,6 @@
 		CE12E5B321E88F3200A22061 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		CE12E5B421E88F3200A22061 /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
 		CE174F7021EDEC50009E5A9A /* UISegmentedControl+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Chainable.swift"; sourceTree = "<group>"; };
-		CE174F7121EDEC50009E5A9A /* Foundation+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+Chainable.swift"; sourceTree = "<group>"; };
 		CE174F7221EDEC50009E5A9A /* UIScrollView+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Blocks.swift"; sourceTree = "<group>"; };
 		CE174F7321EDEC50009E5A9A /* UIButton+EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+EdgeInsets.swift"; sourceTree = "<group>"; };
 		CE174F7421EDEC50009E5A9A /* UITextField+Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Shake.swift"; sourceTree = "<group>"; };
@@ -261,7 +259,6 @@
 			isa = PBXGroup;
 			children = (
 				CE174F7021EDEC50009E5A9A /* UISegmentedControl+Chainable.swift */,
-				CE174F7121EDEC50009E5A9A /* Foundation+Chainable.swift */,
 				CE174F7221EDEC50009E5A9A /* UIScrollView+Blocks.swift */,
 				CE174F7321EDEC50009E5A9A /* UIButton+EdgeInsets.swift */,
 				CE174F7421EDEC50009E5A9A /* UITextField+Shake.swift */,
@@ -520,7 +517,6 @@
 				CE174F9221EDEC50009E5A9A /* UITextField+Shake.swift in Sources */,
 				CE174F9B21EDEC50009E5A9A /* UIImageView+Chainable.swift in Sources */,
 				CE174F9E21EDEC50009E5A9A /* UILabel+Chainable.swift in Sources */,
-				CE174F8F21EDEC50009E5A9A /* Foundation+Chainable.swift in Sources */,
 				CE174FAA21EDEC50009E5A9A /* UISlider+Chainable.swift in Sources */,
 				CE174FAB21EDEC50009E5A9A /* UITextView+Blocks.swift in Sources */,
 				CE174FA621EDEC50009E5A9A /* UITextView+LengthLimit.swift in Sources */,
