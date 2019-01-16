@@ -27,10 +27,39 @@
 * **3、将上述所列UIView中有代理属性的类，全部支持链式回调**
 * **4、UITextField支持最大字数限制属性**
 * **5、UITextView支持最大字数限制属性，支持设置placeholder属性**
-* **5、所有的NSObject对象支持一键添加通知，无需removeObserver。**
+* **6、所有的NSObject对象支持一键添加通知，无需removeObserver。**
+* **7、集成Snapkit**
+
+### 1.Snapkit布局 --- Example
+```
+// 1. removeConstraints
+// 2. makeConstraints
+// 3. remakeConstraints
+// 4. updateConstraints
+ UILabel()
+            .add(to: view)
+            .backgroundColor(UIColor.red)
+            .removeConstraints()
+            .makeConstraints { (make) in
+                make.top.equalTo(100)
+                make.left.equalTo(100)
+                make.width.equalTo(100)
+                make.height.equalTo(100)
+            }
+            .remakeConstraints { (make) in
+                make.top.equalTo(100)
+                make.left.equalTo(100)
+                make.width.equalTo(200)
+                make.height.equalTo(100)
+                
+            }
+            .updateConstraints { (make) in
+                make.height.equalTo(200)
+            }
+```
 
 
-### 1.UIView --- Example
+### 2.UIView --- Example
 
 ```
        //UIView 扩展了单击，双击，长按手势
@@ -51,7 +80,7 @@
             .add(to: view)
 ```
 
-### 2.UILabel --- Example
+### 3.UILabel --- Example
 
 ```
        lab.backgroundColor(UIColor.red)
@@ -75,7 +104,7 @@
             .minimumScaleFactor(10)
 ```
 
-### 3.UIButton --- Example
+### 4.UIButton --- Example
 
 ```
         //Button扩展新功能
@@ -95,7 +124,7 @@
             .imagePosition(.top, space: 10)
 ```
 
-### 4.UIImageView --- Example
+### 5.UIImageView --- Example
 
 ```
 UIImageView()
@@ -107,7 +136,7 @@ UIImageView()
             .add(to: view)
 ```
 
-### 5.UISlider --- Example
+### 6.UISlider --- Example
 
 ```
         slider
@@ -122,7 +151,7 @@ UIImageView()
             }
 ```
 
-### 6.UIProgressView --- Example
+### 7.UIProgressView --- Example
 
 ```
  progressView
@@ -132,7 +161,7 @@ UIImageView()
             .trackTintColor(UIColor.yellow)
 ```
 
-### 7.UISwitch --- Example
+### 8.UISwitch --- Example
 
 ```
  switchView
@@ -144,7 +173,7 @@ UIImageView()
             }
 ```
 
-### 8.UISegmentedControl --- Example
+### 9.UISegmentedControl --- Example
 
 ```
  UISegmentedControl(items: ["吕布", "曹操", "白起","程咬金"])
@@ -158,7 +187,7 @@ UIImageView()
             .add(to: view)
 ```
 
-### 9.UITextField --- Example
+### 910.UITextField --- Example
 
 ```
         // input1 不需要设置代理
@@ -179,7 +208,7 @@ UIImageView()
             .shake(true)
 ```
 
-### 10.UIScrollView --- Example
+### 11.UIScrollView --- Example
 
 ```
   //支持所有代理回调
@@ -198,7 +227,7 @@ UIImageView()
 
 ```
 
-### 11.UITableView --- Example
+### 12.UITableView --- Example
 
 ```
 // TODO: --
@@ -260,7 +289,7 @@ UIImageView()
             .reload()
 ```
 
-### 12.UITextView --- Example
+### 13.UITextView --- Example
 
 ```
  // TODO: 注意
@@ -287,7 +316,7 @@ UIImageView()
 ```
 
 
-### 13.UICollectionView --- Example
+### 14.UICollectionView --- Example
 
 ```
         flowLayout.scrollDirection = .vertical
@@ -390,7 +419,7 @@ UIImageView()
 
 ```
 
-### 14.UISearchBar --- Example
+### 15.UISearchBar --- Example
 
 ```
         //支持所有delegate回调
@@ -412,7 +441,7 @@ UIImageView()
             }
 ```
 
-### 15.Notification --- Example
+### 16.Notification --- Example
 
 ```
 //接受通知 。无需再deinit中释放
