@@ -60,6 +60,7 @@
 		CE174FA921EDEC50009E5A9A /* UITableView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE174F8B21EDEC50009E5A9A /* UITableView+Blocks.swift */; };
 		CE174FAA21EDEC50009E5A9A /* UISlider+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE174F8C21EDEC50009E5A9A /* UISlider+Chainable.swift */; };
 		CE174FAB21EDEC50009E5A9A /* UITextView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE174F8D21EDEC50009E5A9A /* UITextView+Blocks.swift */; };
+		CE20405221EEC107000DEBBD /* Foundation+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20405121EEC107000DEBBD /* Foundation+Chainable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,7 @@
 		CE174F8B21EDEC50009E5A9A /* UITableView+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Blocks.swift"; sourceTree = "<group>"; };
 		CE174F8C21EDEC50009E5A9A /* UISlider+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+Chainable.swift"; sourceTree = "<group>"; };
 		CE174F8D21EDEC50009E5A9A /* UITextView+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Blocks.swift"; sourceTree = "<group>"; };
+		CE20405121EEC107000DEBBD /* Foundation+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+Chainable.swift"; sourceTree = "<group>"; };
 		E11E81A5EA708901F407929E /* Pods-ChainableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainableDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChainableDemo/Pods-ChainableDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +260,7 @@
 		CE174F6F21EDEC50009E5A9A /* Chainable */ = {
 			isa = PBXGroup;
 			children = (
+				CE20405121EEC107000DEBBD /* Foundation+Chainable.swift */,
 				CE174F7021EDEC50009E5A9A /* UISegmentedControl+Chainable.swift */,
 				CE174F7221EDEC50009E5A9A /* UIScrollView+Blocks.swift */,
 				CE174F7321EDEC50009E5A9A /* UIButton+EdgeInsets.swift */,
@@ -516,6 +519,7 @@
 				CE174F9721EDEC50009E5A9A /* UIScrollView+Chainable.swift in Sources */,
 				CE174F9221EDEC50009E5A9A /* UITextField+Shake.swift in Sources */,
 				CE174F9B21EDEC50009E5A9A /* UIImageView+Chainable.swift in Sources */,
+				CE20405221EEC107000DEBBD /* Foundation+Chainable.swift in Sources */,
 				CE174F9E21EDEC50009E5A9A /* UILabel+Chainable.swift in Sources */,
 				CE174FAA21EDEC50009E5A9A /* UISlider+Chainable.swift in Sources */,
 				CE174FAB21EDEC50009E5A9A /* UITextView+Blocks.swift in Sources */,
