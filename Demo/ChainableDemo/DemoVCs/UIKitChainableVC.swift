@@ -22,7 +22,7 @@ class UIKitChainableVC: UIViewController {
         
         //UIView 扩展了单击，双击，长按手势
         UIView()
-            .frame(CGRect(x: 50, y: 400, width: 50, height: 50))
+//            .frame(CGRect(x: 50, y: 400, width: 50, height: 50))
             .backgroundColor(UIColor.black)
             .sizeFit()
             .isUserInteractionEnabled(true)
@@ -36,6 +36,12 @@ class UIKitChainableVC: UIViewController {
                 print("长按")
             }
             .add(to: view)
+            .makeConstraints { (make) in
+                make.left.equalTo(50)
+                make.top.equalTo(500)
+                make.width.equalTo(50)
+                make.height.equalTo(50)
+            }
         
         
         lab.backgroundColor(UIColor.red)

@@ -8,10 +8,11 @@ target 'ChainableDemo' do
   use_frameworks!
 
 
-pod 'DDKit/Chainable'
+  #pod 'DDKit/Chainable'
 
- # pod 'RxSwift',    '~> 4.0'
- # pod 'RxCocoa',    '~> 4.0'
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+ pod 'SnapKit'
 
 
 end

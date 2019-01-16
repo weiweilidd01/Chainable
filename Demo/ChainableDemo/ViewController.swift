@@ -7,13 +7,39 @@
 //
 
 import UIKit
-import DDKit
+import SnapKit
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        // 1. removeConstraints
+        // 2. makeConstraints
+        // 3. remakeConstraints
+        // 4. updateConstraints
+        UILabel()
+            .add(to: view)
+            .backgroundColor(UIColor.red)
+            .removeConstraints()
+            .makeConstraints { (make) in
+                make.top.equalTo(100)
+                make.left.equalTo(100)
+                make.width.equalTo(100)
+                make.height.equalTo(100)
+            }
+            .remakeConstraints { (make) in
+                make.top.equalTo(100)
+                make.left.equalTo(100)
+                make.width.equalTo(200)
+                make.height.equalTo(100)
+                
+            }
+            .updateConstraints { (make) in
+                make.height.equalTo(200)
+            }
+        
+        
         //接受通知 。无需再deinit中释放
         addNotifiObserver(name: "a") { (notifi) in
             print("ViewController接收到: \(notifi.userInfo.debugDescription)")
@@ -106,6 +132,7 @@ class ViewController: UIViewController {
                 }
             })
             .reload()
+        
     }
 
 
