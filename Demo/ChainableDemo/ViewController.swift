@@ -40,6 +40,7 @@ class ViewController: UIViewController {
             }
         
         
+        
         //接受通知 。无需再deinit中释放
         addNotifiObserver(name: "a") { (notifi) in
             print("ViewController接收到: \(notifi.userInfo.debugDescription)")

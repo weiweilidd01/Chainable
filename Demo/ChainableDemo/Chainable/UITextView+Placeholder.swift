@@ -28,7 +28,7 @@ extension UITextView {
                             .font(self.font ?? 13)
                             .sizeFit()
                             .add(to: self)
-            self .setValue(label, forKey: "_placeholderLabel")
+            self.setValue(label, forKey: "_placeholderLabel")
         }
     }
 }
