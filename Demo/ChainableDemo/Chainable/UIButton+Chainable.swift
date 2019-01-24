@@ -11,6 +11,18 @@ import UIKit
 
 // MARK: - UIButton
 public extension UIKitChainable where Self: UIButton {
+    
+    /// 设置图片位置
+    ///
+    /// - Parameters:
+    ///   - p: 位置
+    ///   - space: 距离
+    /// - Returns: self
+    @discardableResult
+    func image(position p: ButtonImagePosition, space: CGFloat) -> Self {
+        imagePosition(p, space: space)
+        return self
+    }
 
     /// font
     ///
@@ -123,6 +135,18 @@ public extension UIKitChainable where Self: UIButton {
     @discardableResult
     func setTitleColor(_ color: UIColor?, state: UIControlState) -> Self {
         setTitleColor(color, for: state)
+        return self
+    }
+    
+    /// 设置背景颜色
+    ///
+    /// - Parameters:
+    ///   - color: color
+    ///   - state: state
+    /// - Returns: self
+    @discardableResult
+    func setBackgroudColor(_ color: UIColor, state: UIControlState) -> Self {
+        setBackground(color: color, forState: state)
         return self
     }
     

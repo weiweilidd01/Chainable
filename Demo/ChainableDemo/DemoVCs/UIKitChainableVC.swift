@@ -76,11 +76,11 @@ class UIKitChainableVC: UIViewController {
             .add(to: view)
             .addActionTouchUpInside({ (btn) in
                 print("按钮")
-                
             })
             .font(18)
-            .imagePosition(.top, space: 10)
-        
+            .image(position: .top, space: 10)
+            .setBackgroudColor(.gray, state: .highlighted)
+    
         
          UIImageView()
             .frame(CGRect(x: 250, y: 400, width: 50, height: 50))
