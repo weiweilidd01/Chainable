@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         // 1. removeConstraints
         // 2. makeConstraints
         // 3. remakeConstraints
@@ -58,6 +57,7 @@ class ViewController: UIViewController {
             "6、CollectionView",
             "7、SearchBar",
             "8、Notification",
+            "9、设置navigationItem & 导航栏渐变"
             ]
         
         
@@ -127,6 +127,12 @@ class ViewController: UIViewController {
                 
                 if indexPath.row == 7 {
                     let vc = NotificationVC()
+                    self?.navigationController?.pushViewController(vc, animated: true)
+                    return
+                }
+                
+                if indexPath.row == 8 {
+                    let vc = TableViewController()
                     self?.navigationController?.pushViewController(vc, animated: true)
                     return
                 }

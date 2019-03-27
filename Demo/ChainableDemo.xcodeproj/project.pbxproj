@@ -62,6 +62,17 @@
 		CE51C87B224B20240011CBD9 /* UITextView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C85D224B20240011CBD9 /* UITextView+Blocks.swift */; };
 		CE51C87D224B4BEA0011CBD9 /* ChainableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C87C224B4BEA0011CBD9 /* ChainableTableView.swift */; };
 		CE51C8BC224B57400011CBD9 /* UIButton+BackgroudColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8BB224B57400011CBD9 /* UIButton+BackgroudColor.swift */; };
+		CE51C8C5224B5FE60011CBD9 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8BD224B5FE40011CBD9 /* Array+Safe.swift */; };
+		CE51C8C6224B5FE60011CBD9 /* DispatchSourceTimer+DispatchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8BE224B5FE40011CBD9 /* DispatchSourceTimer+DispatchTimer.swift */; };
+		CE51C8C7224B5FE60011CBD9 /* Timer+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8BF224B5FE40011CBD9 /* Timer+Block.swift */; };
+		CE51C8C8224B5FE60011CBD9 /* UIViewController+NavigationBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8C0224B5FE50011CBD9 /* UIViewController+NavigationBarItem.swift */; };
+		CE51C8C9224B5FE60011CBD9 /* UIApplication+Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8C1224B5FE50011CBD9 /* UIApplication+Permissions.swift */; };
+		CE51C8CA224B5FE60011CBD9 /* UIView+Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8C2224B5FE50011CBD9 /* UIView+Responder.swift */; };
+		CE51C8CB224B5FE60011CBD9 /* UIViewController+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8C3224B5FE50011CBD9 /* UIViewController+TopViewController.swift */; };
+		CE51C8CC224B5FE60011CBD9 /* Nib+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8C4224B5FE60011CBD9 /* Nib+Extension.swift */; };
+		CE51C8CE224B603B0011CBD9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8CD224B603B0011CBD9 /* UIColor+Extension.swift */; };
+		CE51C8D0224B61E30011CBD9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8CF224B61E30011CBD9 /* TableViewController.swift */; };
+		CE51C8D2224B656D0011CBD9 /* SBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8D1224B656D0011CBD9 /* SBViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +155,17 @@
 		CE51C85D224B20240011CBD9 /* UITextView+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Blocks.swift"; sourceTree = "<group>"; };
 		CE51C87C224B4BEA0011CBD9 /* ChainableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainableTableView.swift; sourceTree = "<group>"; };
 		CE51C8BB224B57400011CBD9 /* UIButton+BackgroudColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+BackgroudColor.swift"; sourceTree = "<group>"; };
+		CE51C8BD224B5FE40011CBD9 /* Array+Safe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		CE51C8BE224B5FE40011CBD9 /* DispatchSourceTimer+DispatchTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchSourceTimer+DispatchTimer.swift"; sourceTree = "<group>"; };
+		CE51C8BF224B5FE40011CBD9 /* Timer+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Block.swift"; sourceTree = "<group>"; };
+		CE51C8C0224B5FE50011CBD9 /* UIViewController+NavigationBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBarItem.swift"; sourceTree = "<group>"; };
+		CE51C8C1224B5FE50011CBD9 /* UIApplication+Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Permissions.swift"; sourceTree = "<group>"; };
+		CE51C8C2224B5FE50011CBD9 /* UIView+Responder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Responder.swift"; sourceTree = "<group>"; };
+		CE51C8C3224B5FE50011CBD9 /* UIViewController+TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopViewController.swift"; sourceTree = "<group>"; };
+		CE51C8C4224B5FE60011CBD9 /* Nib+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nib+Extension.swift"; sourceTree = "<group>"; };
+		CE51C8CD224B603B0011CBD9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		CE51C8CF224B61E30011CBD9 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CE51C8D1224B656D0011CBD9 /* SBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBViewController.swift; sourceTree = "<group>"; };
 		E11E81A5EA708901F407929E /* Pods-ChainableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainableDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChainableDemo/Pods-ChainableDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,6 +261,7 @@
 		CE12E57621E711EE00A22061 /* DemoVCs */ = {
 			isa = PBXGroup;
 			children = (
+				CE51C8CF224B61E30011CBD9 /* TableViewController.swift */,
 				CE12E57B21E716E800A22061 /* UIKitChainableVC.swift */,
 				CE12E57C21E716E800A22061 /* UIKitChainableVC.xib */,
 				CE12E57721E7120800A22061 /* TextFieldVC.swift */,
@@ -255,6 +278,7 @@
 				CE12E59D21E8732800A22061 /* SearchBarVC.xib */,
 				CE12E5B321E88F3200A22061 /* NotificationVC.swift */,
 				CE12E5B421E88F3200A22061 /* NotificationVC.xib */,
+				CE51C8D1224B656D0011CBD9 /* SBViewController.swift */,
 			);
 			path = DemoVCs;
 			sourceTree = "<group>";
@@ -262,6 +286,15 @@
 		CE51C83F224B20240011CBD9 /* Chainable */ = {
 			isa = PBXGroup;
 			children = (
+				CE51C8CD224B603B0011CBD9 /* UIColor+Extension.swift */,
+				CE51C8BD224B5FE40011CBD9 /* Array+Safe.swift */,
+				CE51C8BE224B5FE40011CBD9 /* DispatchSourceTimer+DispatchTimer.swift */,
+				CE51C8BF224B5FE40011CBD9 /* Timer+Block.swift */,
+				CE51C8C1224B5FE50011CBD9 /* UIApplication+Permissions.swift */,
+				CE51C8C4224B5FE60011CBD9 /* Nib+Extension.swift */,
+				CE51C8C2224B5FE50011CBD9 /* UIView+Responder.swift */,
+				CE51C8C0224B5FE50011CBD9 /* UIViewController+NavigationBarItem.swift */,
+				CE51C8C3224B5FE50011CBD9 /* UIViewController+TopViewController.swift */,
 				CE51C840224B20240011CBD9 /* UISegmentedControl+Chainable.swift */,
 				CE51C841224B20240011CBD9 /* Foundation+Chainable.swift */,
 				CE51C842224B20240011CBD9 /* UIScrollView+Blocks.swift */,
@@ -502,17 +535,24 @@
 			files = (
 				CE51C875224B20240011CBD9 /* UIView+Chainable.swift in Sources */,
 				CE51C877224B20240011CBD9 /* UISearchBar+Blocks.swift in Sources */,
+				CE51C8C8224B5FE60011CBD9 /* UIViewController+NavigationBarItem.swift in Sources */,
 				CE12E57D21E716E800A22061 /* UIKitChainableVC.swift in Sources */,
 				CE51C870224B20240011CBD9 /* UIButton+Chainable.swift in Sources */,
 				CE51C86C224B20240011CBD9 /* UIProgressView+Chainable.swift in Sources */,
 				CE51C87D224B4BEA0011CBD9 /* ChainableTableView.swift in Sources */,
 				CE51C872224B20240011CBD9 /* UITextField+LengthLimit.swift in Sources */,
 				CE12E57921E7120800A22061 /* TextFieldVC.swift in Sources */,
+				CE51C8CE224B603B0011CBD9 /* UIColor+Extension.swift in Sources */,
 				CE12E58521E71A4300A22061 /* TextViewVC.swift in Sources */,
 				CE51C860224B20240011CBD9 /* UIScrollView+Blocks.swift in Sources */,
 				CE51C874224B20240011CBD9 /* UITextField+Blocks.swift in Sources */,
+				CE51C8C7224B5FE60011CBD9 /* Timer+Block.swift in Sources */,
+				CE51C8CA224B5FE60011CBD9 /* UIView+Responder.swift in Sources */,
 				CE51C8BC224B57400011CBD9 /* UIButton+BackgroudColor.swift in Sources */,
 				CE51C869224B20240011CBD9 /* UICollectionView+Blocks.swift in Sources */,
+				CE51C8C9224B5FE60011CBD9 /* UIApplication+Permissions.swift in Sources */,
+				CE51C8C6224B5FE60011CBD9 /* DispatchSourceTimer+DispatchTimer.swift in Sources */,
+				CE51C8D0224B61E30011CBD9 /* TableViewController.swift in Sources */,
 				CE12E59E21E8732800A22061 /* SearchBarVC.swift in Sources */,
 				CE51C863224B20240011CBD9 /* UITextView+Chainable.swift in Sources */,
 				CE12E59621E8283E00A22061 /* CollectionViewVC.swift in Sources */,
@@ -521,9 +561,13 @@
 				CE12E52821E7109E00A22061 /* ViewController.swift in Sources */,
 				CE51C864224B20240011CBD9 /* UICollectionView+Chainable.swift in Sources */,
 				CE51C867224B20240011CBD9 /* UIScrollView+Chainable.swift in Sources */,
+				CE51C8CC224B5FE60011CBD9 /* Nib+Extension.swift in Sources */,
+				CE51C8D2224B656D0011CBD9 /* SBViewController.swift in Sources */,
 				CE51C862224B20240011CBD9 /* UITextField+Shake.swift in Sources */,
 				CE51C86B224B20240011CBD9 /* UIImageView+Chainable.swift in Sources */,
 				CE51C86E224B20240011CBD9 /* UILabel+Chainable.swift in Sources */,
+				CE51C8CB224B5FE60011CBD9 /* UIViewController+TopViewController.swift in Sources */,
+				CE51C8C5224B5FE60011CBD9 /* Array+Safe.swift in Sources */,
 				CE51C85F224B20240011CBD9 /* Foundation+Chainable.swift in Sources */,
 				CE51C87A224B20240011CBD9 /* UISlider+Chainable.swift in Sources */,
 				CE51C87B224B20240011CBD9 /* UITextView+Blocks.swift in Sources */,
