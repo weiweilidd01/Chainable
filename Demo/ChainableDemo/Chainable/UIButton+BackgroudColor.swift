@@ -1,8 +1,8 @@
 //
 //  UIButton+BackgroudColor.swift
-//  CoreDemo
+//  ChainableDemo
 //
-//  Created by weiwei.li on 2019/1/18.
+//  Created by weiwei.li on 2019/3/27.
 //  Copyright © 2019 dd01.leo. All rights reserved.
 //
 
@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 extension UIButton {
-    
-    public func setBackground(color: UIColor, forState state: UIControlState) {
+    public func setBackground(color: UIColor, forState state: UIControl.State) {
         setBackgroundImage(imageFromColor(color: color), for: state)
     }
     
@@ -26,3 +25,4 @@ extension UIButton {
         return image
     }
 }
+

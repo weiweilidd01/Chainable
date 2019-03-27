@@ -25,7 +25,7 @@ class CollectionViewVC: UIViewController {
         collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: w, height: h), collectionViewLayout: flowLayout)
                     .isPagingEnabled(false)
                     .registerCell(UICollectionViewCell.self, ReuseIdentifier: "UICollectionViewCell")
-                    .registerSupplementaryView(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, ReuseIdentifier: "UICollectionReusableView")
+            .registerSupplementaryView(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, ReuseIdentifier: "UICollectionReusableView")
                     .addNumberOfSectionsBlock({ (collection) -> (Int) in
                         return 10
                     })
@@ -56,7 +56,7 @@ class CollectionViewVC: UIViewController {
                         return UICollectionViewCell()
                     })
                     .addViewForSupplementaryElementOfKindAtIndexPathBlock({ (collection, kind, indexPath) -> (UICollectionReusableView) in
-                        if kind == UICollectionElementKindSectionHeader {
+                        if kind == UICollectionView.elementKindSectionHeader {
                             let header = collection.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "UICollectionReusableView", for: indexPath)
                             let lab = UILabel()
                                 .frame(header.bounds)

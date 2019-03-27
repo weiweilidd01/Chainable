@@ -53,8 +53,6 @@ class ScrollViewVC: UIViewController {
                 .addScrollViewDidScrollBlock { (scroll) in
                     print(scroll.contentOffset)
                 }
-        
-        
     }
 
     deinit {

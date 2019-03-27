@@ -72,7 +72,7 @@ public extension UIKitChainable where Self: UISearchBar {
     }
     
     @discardableResult
-    func searchBarStyle(_ style: UISearchBarStyle) -> Self {
+    func searchBarStyle(_ style: UISearchBar.Style) -> Self {
         searchBarStyle = style
         return self
     }

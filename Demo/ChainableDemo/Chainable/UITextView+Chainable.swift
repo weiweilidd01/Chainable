@@ -117,7 +117,7 @@ public extension UIKitChainable where Self: UITextView {
     
     @discardableResult
     func typingAttributes(_ attributes: [String : Any]) -> Self {
-        typingAttributes = attributes
+        typingAttributes = convertToNSAttributedStringKeyDictionary(attributes)
         return self
     }
     
@@ -147,7 +147,7 @@ public extension UIKitChainable where Self: UITextView {
     
     @discardableResult
     func linkTextAttributes(_ attributes: [String : Any]) -> Self {
-        linkTextAttributes = attributes
+        linkTextAttributes = convertToOptionalNSAttributedStringKeyDictionary(attributes)
         return self
     }
     
@@ -224,3 +224,14 @@ public extension UIKitChainable where Self: UITextView {
     }
 }
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToNSAttributedStringKeyDictionary(_ input: [String: Any]) -> [NSAttributedString.Key: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}

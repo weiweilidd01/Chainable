@@ -63,7 +63,7 @@ extension UIImageView {
     /// - Parameters:
     ///   - image: 显示的图片
     ///   - mode: 显示模式 `contentMode`
-    convenience init(image: UIImage, mode: UIViewContentMode) {
+    convenience init(image: UIImage, mode: UIView.ContentMode) {
         self.init(image: image)
         self.contentMode = mode
     }

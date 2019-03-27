@@ -11,7 +11,6 @@ import UIKit
 
 // MARK: - UIButton
 public extension UIKitChainable where Self: UIButton {
-    
     /// 设置图片位置
     ///
     /// - Parameters:
@@ -23,7 +22,7 @@ public extension UIKitChainable where Self: UIButton {
         imagePosition(p, space: space)
         return self
     }
-
+    
     /// font
     ///
     /// - Parameter font: font
@@ -121,7 +120,7 @@ public extension UIKitChainable where Self: UIButton {
     ///   - state: state
     /// - Returns: self
     @discardableResult
-    func setTitle(_ title: String?, state: UIControlState) -> Self {
+    func setTitle(_ title: String?, state: UIControl.State) -> Self {
         setTitle(title, for: state)
         return self
     }
@@ -133,20 +132,8 @@ public extension UIKitChainable where Self: UIButton {
     ///   - state: state
     /// - Returns: self
     @discardableResult
-    func setTitleColor(_ color: UIColor?, state: UIControlState) -> Self {
+    func setTitleColor(_ color: UIColor?, state: UIControl.State) -> Self {
         setTitleColor(color, for: state)
-        return self
-    }
-    
-    /// 设置背景颜色
-    ///
-    /// - Parameters:
-    ///   - color: color
-    ///   - state: state
-    /// - Returns: self
-    @discardableResult
-    func setBackgroudColor(_ color: UIColor, state: UIControlState) -> Self {
-        setBackground(color: color, forState: state)
         return self
     }
     
@@ -157,7 +144,7 @@ public extension UIKitChainable where Self: UIButton {
     ///   - state: state
     /// - Returns: self
     @discardableResult
-    func setImage(_ image: UIImage?, state: UIControlState) -> Self {
+    func setImage(_ image: UIImage?, state: UIControl.State) -> Self {
         setImage(image, for: state)
         return self
     }
@@ -169,7 +156,7 @@ public extension UIKitChainable where Self: UIButton {
     ///   - state: state
     /// - Returns: self
     @discardableResult
-    func setBackgroundImage(_ image: UIImage?, state: UIControlState) -> Self {
+    func setBackgroundImage(_ image: UIImage?, state: UIControl.State) -> Self {
         setBackgroundImage(image, for: state)
         return self
     }
@@ -181,20 +168,20 @@ public extension UIKitChainable where Self: UIButton {
     ///   - state: state
     /// - Returns: self
     @discardableResult
-    func setAttributedTitle(_ title: NSAttributedString?, state: UIControlState) -> Self {
+    func setAttributedTitle(_ title: NSAttributedString?, state: UIControl.State) -> Self {
         setAttributedTitle(title, for: state)
         return self
     }
     
-//    /// addTargetAction
-//    ///
-//    /// - Parameter handler: handler
-//    /// - Returns: self
-//    @discardableResult
-//    func addActionTouchUpInside(_ handler: @escaping (UIButton) -> Void) -> Self {
-//        self.action(.touchUpInside) { (btn) in
-//            handler(btn)
-//        }
-//        return self
-//    }
+    /// addTargetAction
+    ///
+    /// - Parameter handler: handler
+    /// - Returns: self
+    @discardableResult
+    func addActionTouchUpInside(_ handler: @escaping (UIButton) -> Void) -> Self {
+        self.action(.touchUpInside) { (btn) in
+            handler(btn)
+        }
+        return self
+    }
 }

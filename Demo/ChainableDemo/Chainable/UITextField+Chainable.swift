@@ -78,14 +78,14 @@ public extension UIKitChainable where Self: UITextField {
     }
     
     @discardableResult
-    func borderStyle(_ style: UITextBorderStyle) -> Self {
+    func borderStyle(_ style: UITextField.BorderStyle) -> Self {
         borderStyle = style
         return self
     }
     
     @discardableResult
     func defaultTextAttributes(_ attributes: [String : Any]) -> Self {
-        defaultTextAttributes = attributes
+        defaultTextAttributes = convertToNSAttributedStringKeyDictionary(attributes)
         return self
     }
     
@@ -139,12 +139,12 @@ public extension UIKitChainable where Self: UITextField {
     
     @discardableResult
     func typingAttributes(_ attributes: [String : Any]?) -> Self {
-        typingAttributes = attributes
+        typingAttributes = convertToOptionalNSAttributedStringKeyDictionary(attributes)
         return self
     }
     
     @discardableResult
-    func clearButtonMode(_ mode: UITextFieldViewMode) -> Self {
+    func clearButtonMode(_ mode: UITextField.ViewMode) -> Self {
         clearButtonMode = mode
         return self
     }
@@ -156,7 +156,7 @@ public extension UIKitChainable where Self: UITextField {
     }
     
     @discardableResult
-    func leftViewMode(_ mode: UITextFieldViewMode) -> Self {
+    func leftViewMode(_ mode: UITextField.ViewMode) -> Self {
         leftViewMode = mode
         return self
     }
@@ -168,7 +168,7 @@ public extension UIKitChainable where Self: UITextField {
     }
     
     @discardableResult
-    func rightViewMode(_ mode: UITextFieldViewMode) -> Self {
+    func rightViewMode(_ mode: UITextField.ViewMode) -> Self {
         rightViewMode = mode
         return self
     }
@@ -271,4 +271,15 @@ public extension UIKitChainable where Self: UITextField {
         return self
     }
     
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToNSAttributedStringKeyDictionary(_ input: [String: Any]) -> [NSAttributedString.Key: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }

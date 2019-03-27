@@ -248,7 +248,7 @@ public extension UIKitChainable where Self: UILabel {
     /// - Parameter mode: mode
     /// - Returns: self
     @discardableResult
-    func tintAdjustmentMode(_ mode: UIViewTintAdjustmentMode) -> Self {
+    func tintAdjustmentMode(_ mode: UIView.TintAdjustmentMode) -> Self {
         tintAdjustmentMode = mode
         return self
     }

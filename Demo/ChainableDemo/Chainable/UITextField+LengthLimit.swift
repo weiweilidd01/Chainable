@@ -13,11 +13,11 @@ import RxSwift
 
 fileprivate let UITextFieldDisposebag = DisposeBag()
 extension UITextField {
-
+    
     fileprivate struct TextFieldMaxLengthKey {
         static var kTextFieldMaxLengthKey = "kUITextFieldMaxLengthKey"
     }
-
+    
     public var maxLength: Int  {
         get {
             return (objc_getAssociatedObject(self, &TextFieldMaxLengthKey.kTextFieldMaxLengthKey) as? Int) ?? LONG_MAX
@@ -30,13 +30,13 @@ extension UITextField {
             }
             
             objc_setAssociatedObject(self, &TextFieldMaxLengthKey.kTextFieldMaxLengthKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-//
-//            self.rx.controlEvent(.editingChanged)
-//                .asObservable()
-//                .subscribe(onNext: { [weak self] in
-//                    self?.textFieldTextChanged()
-//                })
-//                .disposed(by: UITextFieldDisposebag)
+            //
+            //            self.rx.controlEvent(.editingChanged)
+            //                .asObservable()
+            //                .subscribe(onNext: { [weak self] in
+            //                    self?.textFieldTextChanged()
+            //                })
+            //                .disposed(by: UITextFieldDisposebag)
             
             self.rx.text.orEmpty
                 .map {[weak self] (text) -> Bool in
@@ -52,35 +52,35 @@ extension UITextField {
                     }
                 })
                 .disposed(by: UITextFieldDisposebag)
-        
+            
         }
     }
     
-//    fileprivate func textFieldTextChanged() {
-//        let toBeString = self.text as NSString?
-//        guard let textStr = toBeString else {
-//            return
-//        }
-//        if textStr.length == 0 {
-//            return
-//        }
-//
-//        //获取高亮方法
-//        let selectedRange = self.markedTextRange ?? UITextRange()
-//        let position = self.position(from: selectedRange.start, offset: 0)
-//
-//        // 没有高亮选择的字，则对已输入的文字进行字数统计和限制
-//        if position != nil {
-//            return
-//        }
-//        if (textStr.length ) > self.maxLength {
-//            let rangeIndex = textStr.rangeOfComposedCharacterSequence(at: self.maxLength)
-//            if rangeIndex.length == 1 {
-//                self.text = textStr.substring(to: self.maxLength)
-//            } else {
-//                let range = textStr.rangeOfComposedCharacterSequences(for: NSRange(location: 0, length: self.maxLength))
-//                self.text = textStr.substring(with: range)
-//            }
-//        }
-//    }
+    //    fileprivate func textFieldTextChanged() {
+    //        let toBeString = self.text as NSString?
+    //        guard let textStr = toBeString else {
+    //            return
+    //        }
+    //        if textStr.length == 0 {
+    //            return
+    //        }
+    //
+    //        //获取高亮方法
+    //        let selectedRange = self.markedTextRange ?? UITextRange()
+    //        let position = self.position(from: selectedRange.start, offset: 0)
+    //
+    //        // 没有高亮选择的字，则对已输入的文字进行字数统计和限制
+    //        if position != nil {
+    //            return
+    //        }
+    //        if (textStr.length ) > self.maxLength {
+    //            let rangeIndex = textStr.rangeOfComposedCharacterSequence(at: self.maxLength)
+    //            if rangeIndex.length == 1 {
+    //                self.text = textStr.substring(to: self.maxLength)
+    //            } else {
+    //                let range = textStr.rangeOfComposedCharacterSequences(for: NSRange(location: 0, length: self.maxLength))
+    //                self.text = textStr.substring(with: range)
+    //            }
+    //        }
+    //    }
 }

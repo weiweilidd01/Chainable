@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewVC: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: ChainableTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class TableViewVC: UIViewController {
         tableView
             .register(for: UITableViewCell.self, cellReuseIdentifier: "cell")
             .register(for: UITableViewHeaderFooterView.self, headerFooterViewReuseIdentifier: "UITableViewHeaderFooterView")
-//            .estimatedRowHeight(200)
+//            .estimatedRowHeight(50)
 //            .estimatedSectionHeaderHeight(100)
 //            .estimatedSectionFooterHeight(0.1)
             .addNumberOfSectionsBlock { (tab) -> (Int) in

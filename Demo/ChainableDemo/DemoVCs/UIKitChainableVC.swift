@@ -75,12 +75,11 @@ class UIKitChainableVC: UIViewController {
             .setTitleColor(UIColor.red, state: .normal)
             .add(to: view)
             .addActionTouchUpInside({ (btn) in
-                print("按钮")
+                print("sdf ")
             })
             .font(18)
             .image(position: .top, space: 10)
-            .setBackgroudColor(.gray, state: .highlighted)
-    
+            .setBackground(color: UIColor.red, forState: .highlighted)
         
          UIImageView()
             .frame(CGRect(x: 250, y: 400, width: 50, height: 50))

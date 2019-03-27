@@ -12,7 +12,7 @@ import UIKit
 public extension UIKitChainable where Self: UIProgressView {
 
     @discardableResult
-    func progressViewStyle(_ style: UIProgressViewStyle) -> Self {
+    func progressViewStyle(_ style: UIProgressView.Style) -> Self {
         progressViewStyle = style
         return self
     }

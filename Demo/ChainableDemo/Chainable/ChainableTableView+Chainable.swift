@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 // MARK: - UITableView
-public extension UIKitChainable where Self: UITableView {
-    
+public extension UIKitChainable where Self: ChainableTableView {
+  
     /// 刷新 `reloadData`
     ///
     /// - Returns: self
@@ -20,21 +20,7 @@ public extension UIKitChainable where Self: UITableView {
         reloadData()
         return self
     }
-    
-    @discardableResult
-    func dataSource(_ dataSource: UITableViewDataSource?) -> Self {
-        self.dataSource = dataSource
-        return self
-    }
-    
-    //不提供设置代理方式
-//    @discardableResult
-//    func delegate(_ delegate: UITableViewDelegate?) -> UITableView {
-//        self.delegate = delegate
-//        return self
-//    }
-    
-    
+
 //    @discardableResult
 //    @available(iOS 10.0, *)
 //    func prefetchDataSource(_ prefetching: UITableViewDataSourcePrefetching?) -> UITableView {
@@ -100,7 +86,7 @@ public extension UIKitChainable where Self: UITableView {
     
     @discardableResult
     @available(iOS 11.0, *)
-    func separatorInsetReference(_ reference: UITableViewSeparatorInsetReference) -> Self {
+    func separatorInsetReference(_ reference: UITableView.SeparatorInsetReference) -> Self {
         separatorInsetReference = reference
         return self
     }
@@ -166,7 +152,7 @@ public extension UIKitChainable where Self: UITableView {
     }
     
     @discardableResult
-    func separatorStyle(_ style: UITableViewCellSeparatorStyle) -> Self {
+    func separatorStyle(_ style: UITableViewCell.SeparatorStyle) -> Self {
         separatorStyle = style
         return self
     }
@@ -247,126 +233,127 @@ public extension UIKitChainable where Self: UITableView {
 }
 
 // MARK: - UITableViewDataSource
-public extension UIKitChainable where Self: UITableView {
+public extension UIKitChainable where Self: ChainableTableView {
     @discardableResult
     func addNumberOfRowsInSectionBlock(_ handler: @escaping((_ tableView: UITableView,_ section: Section)->(Int))) -> Self {
-        setNumberOfRowsInSectionBlock(handler)
+        self.numberOfRowsInSectionBlock = handler
         return self
     }
     
     @discardableResult
     public func addCellForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(UITableViewCell))) -> Self {
-        setCellForRowAtIndexPathBlock(handler)
+        self.cellForRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addNumberOfSectionsBlock(_ handler: @escaping((_ tableView: UITableView)->(Int))) -> Self {
-        setNumberOfSectionsBlock(handler)
+        self.numberOfSectionsBlock = handler
         return self
     }
     
     @discardableResult
     func addTitleForHeaderInSectionBlock(_ handler: @escaping((_ tableView: UITableView, _ section: Section)->(String))) -> Self {
-        setTitleForHeaderInSectionBlock(handler)
+        self.titleForHeaderInSectionBlock = handler
         return self
     }
     
     @discardableResult
     func addTitleForFooterInSectionBlock(_ handler: @escaping((_ tableView: UITableView, _ section: Int)->(String))) -> Self {
-        setTitleForFooterInSectionBlock(handler)
+        self.titleForFooterInSectionBlock = handler
         return self
     }
     
     @discardableResult
     func addCanEditRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView, _ indexPath: IndexPath)->(Bool))) -> Self {
-        setCanEditRowAtIndexPathBlock(handler)
+        self.canEditRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     func addCanMoveRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView, _ indexPath: IndexPath)->(Bool))) -> Self {
-        setCanMoveRowAtIndexPathBlock(handler)
+        self.canMoveRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     func addSectionIndexTitlesBlock(_ handler: @escaping((_ tableView: UITableView)->([String]?))) -> Self {
-        setSectionIndexTitlesBlock(handler)
+        self.sectionIndexTitlesBlock = handler
         return self
     }
     
     @discardableResult
     func addSectionForSectionIndexTitleAtIndexBlock(_ handler: @escaping((_ tableView: UITableView, _ title: String, _ index: Int)->(Int))) -> Self {
-        setSectionForSectionIndexTitleAtIndexBlock(handler)
+        self.sectionForSectionIndexTitleAtIndexBlock = handler
         return self
     }
     
     @discardableResult
-    func addCommitEditingStyleForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView, _ editingStyle: UITableViewCellEditingStyle, _ indexPath: IndexPath)->())) -> Self {
-        setCommitEditingStyleForRowAtIndexPathBlock(handler)
+    func addCommitEditingStyleForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView, _ editingStyle: UITableViewCell.EditingStyle, _ indexPath: IndexPath)->())) -> Self {
+        self.commitEditingStyleForRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     func addMoveRowAtSourceIndexPathtoDestinationIndexPathBlock(_ handler: @escaping((_ tableView: UITableView, _ sourceIndexPath: IndexPath,_ destinationIndexPath: IndexPath)->())) -> Self {
-        setMoveRowAtSourceIndexPathtoDestinationIndexPathBlock(handler)
+        self.moveRowAtSourceIndexPathtoDestinationIndexPathBlock = handler
         return self
     }
 }
+
 // MARK: - UITableVieDelegate
-public extension UIKitChainable where Self: UITableView {
+public extension UIKitChainable where Self: ChainableTableView {
     @discardableResult
     public func addWillDisplayCellForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ cell: UITableViewCell, _ indexPath: IndexPath)->())) -> Self {
-        setWillDisplayCellForRowAtIndexPathBlock(handler)
+        self.willDisplayCellForRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addWillDisplayHeaderViewForSectionBlock(_ handler: @escaping((_ tableView: UITableView,_ view: UIView, _ section: Section)->())) -> Self {
-        setWillDisplayHeaderViewForSectionBlock(handler)
+        self.willDisplayHeaderViewForSectionBlock = handler
         return self
     }
     
     @discardableResult
     public func addWillDisplayFooterViewForSectionBlock(_ handler: @escaping((_ tableView: UITableView,_ view: UIView, _ section: Section)->())) -> Self {
-        setWillDisplayFooterViewForSectionBlock(handler)
+        self.willDisplayFooterViewForSectionBlock = handler
         return self
     }
     
     @discardableResult
     public func addDidEndDisplayingforRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ cell: UITableViewCell, _ indexPath: IndexPath)->())) -> Self {
-        setDidEndDisplayingforRowAtIndexPathBlock(handler)
+        self.didEndDisplayingforRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addDidEndDisplayingHeaderViewForSectionBlock(_ handler: @escaping((_ tableView: UITableView,_ view: UIView, _ section: Section)->())) -> Self {
-        setDidEndDisplayingHeaderViewForSectionBlock(handler)
+        self.didEndDisplayingHeaderViewForSectionBlock = handler
         return self
     }
     
     @discardableResult
     public func addDidEndDisplayingFooterViewforSectionBlock(_ handler: @escaping((_ tableView: UITableView,_ view: UIView, _ section: Section)->())) -> Self {
-        setDidEndDisplayingFooterViewforSectionBlock(handler)
+        self.didEndDisplayingFooterViewforSectionBlock = handler
         return self
     }
     
     @discardableResult
     public func addHeightForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(CGFloat))) -> Self {
-        setHeightForRowAtIndexPathBlock(handler)
+        self.heightForRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addHeightForHeaderInSectionBlock(_ handler: @escaping((_ tableView: UITableView,_ section: Section)->(CGFloat))) -> Self {
-        setHeightForHeaderInSectionBlock(handler)
+        self.heightForHeaderInSectionBlock = handler
         return self
     }
     
     @discardableResult
     public func addHeightForFooterInSectionBlock(_ handler: @escaping((_ tableView: UITableView,_ section: Section)->(CGFloat))) -> Self {
-        setHeightForFooterInSectionBlock(handler)
+        self.heightForFooterInSectionBlock = handler
         return self
     }
     
@@ -390,111 +377,111 @@ public extension UIKitChainable where Self: UITableView {
     
     @discardableResult
     public func addViewForHeaderInSectionBlock(_ handler: @escaping((_ tableView: UITableView,_ section: Section)->(UIView?))) -> Self {
-        setViewForHeaderInSectionBlock(handler)
+        self.viewForHeaderInSectionBlock = handler
         return self
     }
     
     @discardableResult
     public func addViewForFooterInSectionBlock(_ handler: @escaping((_ tableView: UITableView,_ section: Section)->(UIView?))) -> Self {
-        setViewForFooterInSectionBlock(handler)
+        self.viewForFooterInSectionBlock = handler
         return self
     }
     
     @discardableResult
     public func addAccessoryButtonTappedForRowWithBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->())) -> Self {
-        setAccessoryButtonTappedForRowWithBlock(handler)
+        self.accessoryButtonTappedForRowWithBlock = handler
         return self
     }
     
     @discardableResult
     public func addShouldHighlightRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(Bool))) -> Self {
-        setShouldHighlightRowAtIndexPathBlock(handler)
+        self.shouldHighlightRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addDidHighlightRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->())) -> Self {
-        setDidHighlightRowAtIndexPathBlock(handler)
+        self.didHighlightRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addDidUnhighlightRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->())) -> Self {
-        setDidUnhighlightRowAtIndexPathBlock(handler)
+        self.didUnhighlightRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addWillSelectRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(IndexPath?))) -> Self {
-        setWillSelectRowAtIndexPathBlock(handler)
+        self.willSelectRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addWillDeselectRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(IndexPath?))) -> Self {
-        setWillDeselectRowAtIndexPathBlock(handler)
+        self.willDeselectRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addDidSelectRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->())) -> Self {
-        setDidSelectRowAtIndexPathBlock(handler)
+        self.didSelectRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addDidDeselectRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->())) -> Self {
-        setDidDeselectRowAtIndexPathBlock(handler)
+        self.didDeselectRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
-    public func addEditingStyleForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(UITableViewCellEditingStyle))) -> Self {
-        setEditingStyleForRowAtIndexPathBlock(handler)
+    public func addEditingStyleForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(UITableViewCell.EditingStyle))) -> Self {
+        self.editingStyleForRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addTitleForDeleteConfirmationButtonForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(String?))) -> Self {
-        setTitleForDeleteConfirmationButtonForRowAtIndexPathBlock(handler)
+        self.titleForDeleteConfirmationButtonForRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addEditActionsForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->([UITableViewRowAction]?))) -> Self {
-        setEditActionsForRowAtIndexPathBlock(handler)
+        self.editActionsForRowAtIndexPathBlock = handler
         return self
     }
     
-    @discardableResult
-    @available(iOS 11.0, *)
-    public func addLeadingSwipeActionsConfigurationForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(UISwipeActionsConfiguration?))) -> Self {
-        setLeadingSwipeActionsConfigurationForRowAtIndexPathBlock(handler)
-        return self
-    }
-    
-    @discardableResult
-    @available(iOS 11.0, *)
-    public func addTrailingSwipeActionsConfigurationForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(UISwipeActionsConfiguration?))) -> Self {
-        setTrailingSwipeActionsConfigurationForRowAtIndexPathBlock(handler)
-        return self
-    }
+//    @discardableResult
+//    @available(iOS 11.0, *)
+//    public func addLeadingSwipeActionsConfigurationForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(UISwipeActionsConfiguration?))) -> Self {
+//        self.addLeadingSwipeActionsConfigurationForRowAtIndexPathBlock = handler
+//        return self
+//    }
+//
+//    @discardableResult
+//    @available(iOS 11.0, *)
+//    public func addTrailingSwipeActionsConfigurationForRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(UISwipeActionsConfiguration?))) -> Self {
+//        setTrailingSwipeActionsConfigurationForRowAtIndexPathBlock(handler)
+//        return self
+//    }
     
     @discardableResult
     public func addShouldIndentWhileEditingRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->(Bool))) -> Self {
-        setShouldIndentWhileEditingRowAtIndexPathBlock(handler)
+        self.shouldIndentWhileEditingRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addWillBeginEditingRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath)->())) -> Self {
-        setWillBeginEditingRowAtIndexPathBlock(handler)
+        self.willBeginEditingRowAtIndexPathBlock = handler
         return self
     }
     
     @discardableResult
     public func addDidEndEditingRowAtIndexPathBlock(_ handler: @escaping((_ tableView: UITableView,_ indexPath: IndexPath?)->())) -> Self {
-        setDidEndEditingRowAtIndexPathBlock(handler)
+        self.didEndEditingRowAtIndexPathBlock = handler
         return self
     }
 }

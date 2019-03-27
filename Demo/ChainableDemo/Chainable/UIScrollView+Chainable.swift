@@ -32,7 +32,7 @@ public extension UIKitChainable where Self: UIScrollView {
     
     @discardableResult
     @available(iOS 11.0, *)
-    func contentInsetAdjustmentBehavior(_ behavior: UIScrollViewContentInsetAdjustmentBehavior) -> Self {
+    func contentInsetAdjustmentBehavior(_ behavior: UIScrollView.ContentInsetAdjustmentBehavior) -> Self {
         contentInsetAdjustmentBehavior = behavior
         return self
     }
@@ -92,7 +92,7 @@ public extension UIKitChainable where Self: UIScrollView {
     }
     
     @discardableResult
-    func indicatorStyle(_ style: UIScrollViewIndicatorStyle) -> Self {
+    func indicatorStyle(_ style: UIScrollView.IndicatorStyle) -> Self {
         indicatorStyle = style
         return self
     }
@@ -105,7 +105,7 @@ public extension UIKitChainable where Self: UIScrollView {
 //    }
     
     @discardableResult
-    func indexDisplayMode(_ mode: UIScrollViewIndexDisplayMode) -> Self {
+    func indexDisplayMode(_ mode: UIScrollView.IndexDisplayMode) -> Self {
         indexDisplayMode = mode
         return self
     }
@@ -153,7 +153,7 @@ public extension UIKitChainable where Self: UIScrollView {
     }
     
     @discardableResult
-    func keyboardDismissMode(_ mode: UIScrollViewKeyboardDismissMode) -> Self {
+    func keyboardDismissMode(_ mode: UIScrollView.KeyboardDismissMode) -> Self {
         keyboardDismissMode = mode
         return self
     }

@@ -33,7 +33,7 @@ public extension UIKitChainable where Self: UICollectionView {
     
     @discardableResult
     @available(iOS 11.0, *)
-    func reorderingCadence(_ cadence: UICollectionViewReorderingCadence)  -> Self {
+    func reorderingCadence(_ cadence: UICollectionView.ReorderingCadence)  -> Self {
         reorderingCadence = cadence
         return self
     }

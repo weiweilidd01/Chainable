@@ -146,7 +146,7 @@ public extension UIKitChainable where Self: UIView  {
     ///   - autoresizing: 自适应方式
     /// - Returns: 返回 self，支持链式调用
     @discardableResult
-    func layout(_ frame: CGRect, _ autoresizing: UIViewAutoresizing) -> Self {
+    func layout(_ frame: CGRect, _ autoresizing: UIView.AutoresizingMask) -> Self {
         self.frame = frame
         autoresizingMask = autoresizing
         return self
@@ -212,7 +212,7 @@ public extension UIKitChainable where Self: UIView  {
     /// - Parameter mode: 显示模式
     /// - Returns: 返回 self，支持链式调用
     @discardableResult
-    func contentMode(_ mode: UIViewContentMode) -> Self {
+    func contentMode(_ mode: UIView.ContentMode) -> Self {
         contentMode = mode
         return self
     }
@@ -322,7 +322,7 @@ public extension UIKitChainable where Self: UIView  {
     /// - Parameter mask: mask
     /// - Returns: self
     @discardableResult
-    func autoresizingMask(_ mask: UIViewAutoresizing) -> Self {
+    func autoresizingMask(_ mask: UIView.AutoresizingMask) -> Self {
         autoresizingMask = mask
         return self
     }
@@ -391,7 +391,7 @@ public extension UIKitChainable where Self: UIView  {
     /// - Returns: self
     @discardableResult
     func bring(subviewToFront view: UIView) -> Self {
-        bringSubview(toFront: view)
+        bringSubviewToFront(view)
         return self
     }
     
@@ -401,7 +401,7 @@ public extension UIKitChainable where Self: UIView  {
     /// - Returns: self
     @discardableResult
     func send(subviewToBack view: UIView) -> Self {
-        sendSubview(toBack: view)
+        sendSubviewToBack(view)
         return self
     }
     

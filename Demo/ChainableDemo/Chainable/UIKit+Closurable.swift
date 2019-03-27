@@ -28,7 +28,7 @@ public extension UIKitClosurable where Self: UIControl {
     ///   - event: 事件类型
     ///   - handler: 闭包回调，sender 为产生事件的控件，闭包内一定要使用 `[weak self]` 避免循环引用
     /// - Returns: 返回 self，支持链式调用
-    @discardableResult func action(_ event: UIControlEvents, _ handler: @escaping (_ sender: Self) -> Void) -> Self {
+    @discardableResult func action(_ event: UIControl.Event, _ handler: @escaping (_ sender: Self) -> Void) -> Self {
         let actionTarget = ClosureActionTarget(handler: handler)
         addTarget(actionTarget, action: #selector(actionTarget.invoke(_:)), for: event)
         allActionClosureTargets.append(actionTarget)

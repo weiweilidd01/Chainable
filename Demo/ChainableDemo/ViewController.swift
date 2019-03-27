@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 class ViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: ChainableTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,6 @@ class ViewController: UIViewController {
             .updateConstraints { (make) in
                 make.height.equalTo(200)
             }
-        
         
         
         //接受通知 。无需再deinit中释放

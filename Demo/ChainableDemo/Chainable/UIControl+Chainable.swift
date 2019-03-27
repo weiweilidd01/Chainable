@@ -28,7 +28,7 @@ public extension UIKitChainable where Self: UIControl {
     ///   - handler: 回调
     /// - Returns: self
     @discardableResult
-    func addAction(events event: UIControlEvents, handler: @escaping (Self) -> Void) -> Self {
+    func addAction(events event: UIControl.Event, handler: @escaping (Self) -> Void) -> Self {
         action(event, handler)
         return self
     }
