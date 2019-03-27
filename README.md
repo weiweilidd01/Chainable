@@ -13,7 +13,7 @@
  *  UISwitch
  *  UISegmentedControl
  *  UITextField
- *  UITableView
+ *  UITableView -- 替换成ChainableTableView，解决和UIPickerView代理冲突
  *  UITextView
  *  UIScrollView
  *  UICollectionView
