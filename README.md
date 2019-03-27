@@ -227,7 +227,7 @@ UIImageView()
 
 ```
 
-### 12.UITableView --- Example
+### 12.UITableView(已经替换成ChainableTableView，解决和UIPickerView代理冲突) --- Example 
 
 ```
 // TODO: --
