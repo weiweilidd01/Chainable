@@ -19,8 +19,9 @@
  *  UICollectionView
  *  UISearchBar
  *  Notification
-
- 
+ * UIViewController+NavigationBarItem 一行代码给导航栏添加barItem，新增渐变导航栏的透明度
+ * UIViewController+TopViewController 获得当前app最上层的viewController
+ * Timer+Block 封装Timer block回调
  **除添加系统所有属性外，几大重点关注点：**
 * **1、将UIVIew及其子类可直接通过点语法添加单击，双击，长按等手势，还有移除所有子类等常见操作方法。**
 * **2、将UIControl中事件加入链式语法**
@@ -456,3 +457,146 @@ UIImageView()
 
 ```
 
+
+## 17.UIViewController+NavigationBarItem
+* 用途： 一行代码给导航栏添加barItem
+<br/>
+
+1.添加带文字的右边按钮
+
+<img src="https://upload-images.jianshu.io/upload_images/2026287-b280fa9fa4cc2b27.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=200 height=100 />
+
+```
+setRightButtonItem(title: "关闭") { (btn) in
+//点击事件回调
+        }
+```
+2.添加带图片的右边按钮
+
+<img src="https://upload-images.jianshu.io/upload_images/2026287-e36acc101d6fcd8e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=200 height=100 />
+```
+     setRightButtonItem(image: UIImage(named: "icon_follow")) { (btn) in
+                //点击事件回调
+            }
+```
+    
+3.添加自定义图片的右边按钮
+
+<img src="https://upload-images.jianshu.io/upload_images/2026287-e36acc101d6fcd8e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=200 height=100 />
+
+```
+        let imageView = UIImageView()
+        imageView.frame = CGRect(x: 0, y: 12, width: 20, height: 20)
+        imageView.image = UIImage(named: "icon_follow")
+        setRightButtonItem(customView: imageView) { (view, tap) in
+            //点击事件回调
+        }
+```
+
+ 4.添加多个标题的右边按钮
+
+<img src="https://upload-images.jianshu.io/upload_images/2026287-e66a00e5803cb245.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=200 height=100 />
+
+```
+        setRightButtonItem(titles: ["关闭", "上传", "取消"]) { (btn) in
+            //点击事件回调
+        }
+```
+
+ 5.添加多个图片的右边按钮
+
+<img src="https://upload-images.jianshu.io/upload_images/2026287-c4084f89ba792794.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=200 height=100 />
+
+```
+        let items = [UIImage(named: "icon_follow"),UIImage(named: "icon_follow")]
+        setRightButtonItem(images: items) { (btn) in
+            //点击事件回调
+        }
+```
+    
+6.添加带标题的左边按钮
+
+<img src="https://upload-images.jianshu.io/upload_images/2026287-9b9071a9803b471f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=200 height=100 />
+
+```
+       setLeftButtonItem(title: "返回") { (btn) in
+            //点击事件回调
+        }
+```
+
+
+7.添加带图片的左边按钮
+
+<img src="https://upload-images.jianshu.io/upload_images/2026287-d31b067e6bf3547e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=200 height=100 />
+
+```
+       setLeftButtonItem(image: UIImage(named: "icon_follow")) { (btn) in
+            //点击事件回调
+        }   
+```
+    
+ 8.添加带图片数组的左边按钮
+
+<img src="https://upload-images.jianshu.io/upload_images/2026287-08d7f1691e959c4a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=200 height=100 />
+
+```
+        setLeftButtonItem(images: [UIImage(named: "icon_follow"),UIImage(named: "icon_follow")]) { (btn) in
+            //点击事件回调
+        }
+```
+    
+ 9.添加带标题数组的左边按钮
+
+<img src="https://upload-images.jianshu.io/upload_images/2026287-8296155c3ff54a90.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=200 height=100 />
+
+```
+       setLeftButtonItem(titles: ["关闭", "上传", "取消"]) { (btn) in
+            //点击事件回调
+        }
+```
+    
+
+ 10.添加自定义视图的左边按钮
+
+<img src="https://upload-images.jianshu.io/upload_images/2026287-d31b067e6bf3547e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width=200 height=100 />
+
+```
+        let imageView = UIImageView()
+        imageView.frame = CGRect(x: 0, y: 12, width: 20, height: 20)
+        imageView.image = UIImage(named: "icon_follow")
+        setLeftButtonItem(customView: imageView) { (view, tap) in
+            //点击事件回调
+        }
+```
+
+ 11.新增渐变导航栏的透明度
+ 
+ ```
+ 基本使用说明
+ 第一步
+ override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //此方法必须在willAppear中设置
+        navigationController?.navigationBar.isTranslucent = true
+        //进来默认显示透明色
+        changeNavBackgroundImageWithAlpha(alpha: 0)
+    }
+    
+    //滑动监听
+ override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let value = scrollView.contentOffset.y
+        let alpha = value / 64
+        changeNavBackgroundImageWithAlpha(alpha: alpha)
+    }
+ ```
+ 方法说明
+ 
+```
+ /// 改变导航栏透明度
+    ///
+    /// - Parameters:
+    ///   - alpha: 透明值
+    ///   - backgroundColor: 非透明时背景颜色
+    ///   - shadowColor: 非透明是shadow阴影颜色
+     public func changeNavBackgroundImageWithAlpha(alpha: CGFloat,   backgroundColor: UIColor = .white, shadowColor: UIColor =  #colorLiteral(red: 0.9311618209, green: 0.9279686809, blue: 0.9307579994, alpha: 1))
+```
